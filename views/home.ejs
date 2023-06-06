@@ -1,0 +1,27 @@
+<%- include("partials/header"); -%>
+    
+<main class="home-page">
+    <div class="home-page-header">
+        <h1>WELCOME TO MY JOURNAL</h1>
+    </div>
+    <div class="home-page-posts">
+        <ul class="homepage-list">
+            <% for(var i = post.length-1; i >= 0; i--){ %>
+                <li class="header">
+                    <a href="/posts/<%=post[i]._id%>" class="page-divisor">
+                    <ul class="home-page-post-ul">
+                        <div class="home-page-post-image">
+                          <li><img src="<%= post[i].ImageUrl %>"></li>  
+                        </div>
+                        <div class="home-page-post-title">
+                          <li><p><%= post[i].Title %><p/></li>  
+                        </div>
+                    </ul>   
+                    </a>
+                </li>
+            <% } %>
+        </ul>
+    </div>
+</main>
+
+<%- include("partials/footer"); -%>

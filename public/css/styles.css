@@ -1,0 +1,412 @@
+html {
+    min-height: 100%;
+    position: relative;
+  }
+  
+  nav{
+    background-color: #FFFFFF;
+    
+  }
+  
+  body{
+    background-color: #AEDACB
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 2px;
+      
+      
+  }
+  
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+  
+  
+  
+/* ##################################ABOUT-PAGE##########################################*/
+.about-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+    width: 50%;
+}
+
+.about-img img{
+    border-radius: 100%;
+    width: 250px;
+
+}
+
+.about-text{
+    padding-top:10% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+}
+/* ##################################ABOUT-PAGE##########################################*/
+
+/* ##################################HOME-PAGE##########################################*/
+
+.home-page {
+  width: 100%;
+  padding-top: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-page h1{
+  font-family: 'Righteous', cursive;
+}
+
+
+.homepage-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+  grid-gap: 30px;
+  margin: 0 auto;
+}
+
+.homepage-list a{
+  text-decoration: none;
+  color: black;
+  font-family: 'Righteous', cursive;
+  font-size: 20px;
+}
+
+
+.homepage-list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  list-style-type: none;
+}
+
+.home-page-posts img {
+  width: 80%;
+  border-radius: 10%;
+  box-shadow: 5px 10px 10px #888888;
+}
+
+.page-divisor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home-page-post-ul{
+ padding: 0;
+ margin-left: 0%;
+ margin-right: 0%;
+}
+
+.home-page-post-ul li{
+  width: 100%;
+
+}
+
+@media (max-width: 600px) {
+  .homepage-list {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+}
+
+
+
+
+
+/* ##################################HOME-PAGE##########################################*/
+
+/* ##################################SING-IN-PAGE & LOG-IN-PAGE##########################################*/
+.singup-login-page{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form{
+  padding-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 50%;
+  text-align: center;
+}
+
+.singup-login-page button {
+  width: 100%;
+}
+
+/* ##################################SING-IN-PAGE & LOG-IN-PAGE##########################################*/
+
+
+/* ##################################COMPOSE-PAGE##########################################*/
+.compose-page{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.compose-form{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+}
+
+.compose-page button {
+  width: 40%;
+}
+
+
+/* ##################################COMPOSE-PAGE##########################################*/
+
+
+/* ##################################CONTACT-PAGE##########################################*/
+.contact-page{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form{
+  padding-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 50%;
+  text-align: center;
+  
+}
+
+.form-group{
+  margin-top: 5%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+/* ##################################CONTACT-PAGE##########################################*/
+
+/* ##################################MODELS-PAGE##########################################*/
+.models-page {
+  padding-top: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.models-post-list {
+  padding-top:3% ;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  max-width: 1140px; 
+  margin: 0 auto; 
+}
+
+.models-post-list li {
+  flex-basis: calc(33.33% - 10px); 
+  margin-bottom: 30px; 
+}
+
+.models-post-list img {
+  width: 100%;
+  border-radius: 10%;
+  box-shadow: 5px 10px 10px #888888;
+}
+
+
+/* ##################################MODELS-PAGE##########################################*/
+
+/* ##################################POST-PAGE##########################################*/
+article{
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+.article-title{
+   font-family: 'Righteous', cursive;
+  font-size: 45px;
+}
+
+.article-text{
+  margin-top: 5%;
+  font-size: 25px;
+  overflow-wrap: break-word;
+  word-wrap: break-word; 
+  overflow: auto;
+  margin-bottom: 10%;
+ font-family: 'Merriweather', serif;
+}
+
+
+ .my-text-info{
+  font-size: 13px;
+}
+
+.text-side{
+  width: 30rem;
+}
+
+.post-list {
+  list-style-type:none;
+  padding-left:80px;
+}
+
+.post-list img{
+  max-width:450px;
+  max-height:450px;
+  border-radius: 10%;
+}
+
+.comment-form{
+  width: 480px;
+  height: 173px;
+}
+
+.comment-divider {
+  border: 1px solid gray;
+  margin: 10px 0;
+}
+
+
+.comments-bar{
+  margin-top: 5%;
+  
+}
+
+
+.single-comment{
+ margin-top: 3%;
+ font-size: 20px;
+}
+
+.comment-info{
+  font-size: 13px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+  .post-list {
+      list-style-type:none;
+      padding-left: 40px;
+  }
+  .post-list img{
+      max-width:350px;
+      max-height:350px;
+  }
+
+  .text-side{
+      width: 20rem;
+      
+  }
+
+  .comment-form{
+      width: 350px;
+      height: 100px;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .post-list {
+      list-style-type:none;
+      padding-left: 20px;
+  }
+  .article-text {
+      overflow: visible;
+      text-overflow: clip;
+    }
+
+  .post-list img{
+      max-width:300px;
+      max-height:300px;
+  }
+  .comment-form{
+      width: 300px;
+      height: 73px;
+  }
+}
+
+
+/* ##################################POST-PAGE##########################################*/
+
+/* ##################################FOOTER##########################################*/
+.footer-padding {
+    padding-bottom: 60px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;   
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    gap: 10%;
+  }
+  
+  .footer-name {
+    color: #fff;
+    font-size: 12px; 
+  }
+
+  .footer-socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  
+/* ##################################FOOTER##########################################*/

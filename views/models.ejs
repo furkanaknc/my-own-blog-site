@@ -1,0 +1,28 @@
+<%- include("partials/header"); -%>
+
+<main class="models-page">
+  <div class="models-header">
+    <h1>Models</h1>
+  </div>
+  <div class="models-posts">
+    <ul class="models-post-list">
+      <% for (var i = 0; i < posts.length; i++) { %>
+        <li>
+          <a href="#" onclick="showImage('<%= posts[i].ImageUrl %>')">
+            <img src="<%= posts[i].ImageUrl %>" alt="<%= posts[i].Title %>">
+          </a>
+        </li>
+     <% } %>
+    </ul>
+  </div>
+
+</main>
+
+<!-- for show the images with their original size -->
+<script>
+  function showImage(imageUrl) {
+    window.open(imageUrl, "_blank");
+  }
+</script>
+
+<%- include("partials/footer"); -%>

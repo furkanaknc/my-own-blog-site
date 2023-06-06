@@ -1,0 +1,29 @@
+<%- include("partials/header"); -%>
+<main class="compose-page">
+    <div class="form">
+        <p><%= message %></p>
+        <form action="/compose" method="post" class="form-label" enctype="multipart/form-data">
+            <div class="form-label compos-form">
+                <input type="file" name="avatar" />
+            </div>
+            <div class="form-label compos-form">
+                <label>Title</label>
+                <input type="text" name="textTitle">
+            </div>
+            <div class="form-label compos-form">
+                <label>Post</label>
+                <textarea class="compose-text" name="textPost" rows="10" cols="100"></textarea>
+            </div>
+            <div class="form-label compos-form">
+                <label>
+                    <input type="checkbox" name="shareToModels" value="true"> Share Post in models
+                </label>
+            </div>
+            <div class="form-label compos-form">
+                <button class="btn btn-success rounded-pill" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</main>
+
+<%- include("partials/footer"); -%>

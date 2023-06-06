@@ -1,0 +1,1 @@
+This is my own blog site design.Everybody can sign up as default user and they can only make comments but they cant share anything. Only admins can share post. You can change type of users to admin from your mongoDB database. I have used express,bcrypt,cloudinary,multer,lodash,moongoose,bodyparser in this project.  

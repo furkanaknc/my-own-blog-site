@@ -1,0 +1,51 @@
+<%- include("partials/header"); -%>
+<main class="post-page">
+    <article>
+        <ul class="post-list">
+            <p><%=message%></p>
+            <li><img src="<%=image%>"></li>
+            <li><h1 class="article-title"><%=textTitle%></h1></li>
+            <li>
+                <div class="text-side">
+
+                    <div class="my-text"> 
+                        <p class="article-text"><%=textPost%></p>
+                        <div class="my-text-info">
+                            <p><%= author %></p>
+                            <p><%= time %></p>  
+                        </div>
+                        
+                    </div>
+                        <div class="make-a-comment">
+                            <form action="/posts/<%=postID%>" method="post">
+                                <label>Comment</label>
+                                <textarea class="comment-form " name="comment" rows="10" cols="10"></textarea>
+                                <button class="btn btn-success  rounded-pill" type="submit">submit</button>
+                            </form>   
+                        </div>
+                       
+                    
+                    <div class="comments-bar">
+
+                    <h>COMMENTS:</h>
+                    <hr class="comment-divider">
+                    <% for(var i = comments.length-1; i >= 0; i--){ %>
+                        <div class="single-comment">
+                            <p><%= comments[i].Comment %><p/>
+                            <div class="comment-info">
+                                <p><%= comments[i].Time %></p>
+                                <p><%= comments[i].Author %></p>   
+                            </div>
+                            
+                            <hr class="comment-divider">  
+                        </div>
+                        
+                    <% } %>
+
+                   </div> 
+                </div>
+            </li>
+        </ul>
+    </article>
+</main>
+<%- include("partials/footer"); -%>

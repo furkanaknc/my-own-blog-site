@@ -1,0 +1,29 @@
+<%- include("partials/header"); -%>
+<main class="singup-login-page">
+    <div class="form">
+        <h2><%= message %></h2>
+        <form action="/signup" method="post">
+            <div class="form-label">
+                <label>E mail</label>
+                <input class="form-control rounded-pill" type="text" name="userMail">
+            </div>
+            <div class="form-label">
+                <label>Nick Name</label>
+                <input class="form-control rounded-pill" type="text" name="nickName">
+            </div>
+            <div class="form-label">
+                <label>Password</label>
+                <input class="form-control rounded-pill" type="password" name="password" id="myInput">
+                <input type="checkbox" onclick="showPasswordAtFirst()">Show Password
+            </div>
+            <div class="form-label">
+                <label>Password</label>
+                <input class="form-control rounded-pill" type="password" name="password2" id="myInput2">
+                <input  type="checkbox" onclick="showPasswordAtSecond()">Show Password
+            </div>
+            <button class="btn btn-success rounded-pill" type="submit">Sign Up</button>
+        </form>
+    </div>
+</main>
+<script type="text/javascript" src="/styles.js"></script>
+<%- include("partials/footer"); -%>
